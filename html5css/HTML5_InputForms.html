@@ -98,6 +98,54 @@
 				   title="Valid Ip: 123.456.789.012 "
 				   required>
 			</p>
+            <!--STEPHEN BELIKOFF PARTA BEGINS HERE-->
+            <p>
+            <!--1. RANGE SELECTION FROM 5 to 25-->
+            <!--Used https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value for reference on displying value-->
+            <label for="range1">Range from 5 to 25</label>
+            <input type="range" id="range1" name="range1" value="5" min="5" max="25" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output>
+            </p>
+            <!--2. RADIO BUTTON for selecting gender-->
+            <p>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label><br>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label><br>
+                    <label for="cns"><input type="radio" id="cns" name="gender" value="cns">Choose not to specify</label>
+                </fieldset>
+            </p>
+            <!--3. BUTTON INPUT-->
+            <p>
+                <label for="worstbutton">Worst Button</label>
+                <input type="button" id="worstbutton" name="worstbutton" value="Don't Press Me!" onclick="alert('You just lost The Game.')">
+            </p>
+            <!--4. COLOR INPUT (FAVORITE COLOR PICKER)-->
+            <p>
+                <label for="colorpicker">Favorite Color</label>
+                <input type="color" id="colorpicker" name="colorpicker" value="rgb(0,0,0)">
+            </p>
+            <!--5. DATETIME-LOCAL-->
+            <p>
+                <label for="datetime">Date-Time</label>
+                <input type="datetime-local" id="datetime" name="datetime">
+            </p>
+            <!--6. MONTH INPUT-->
+            <p>
+                <label for="month6">Month</label>
+                <input type="month" id="month6" name="month6">
+            </p>
+            <!--7. WEEK INPUT-->
+            <p>
+                <label for="week7">Week</label>
+                <input type="week" id="week7" name="week7">
+            </p>
+            <!--8. TIME INPUT-->
+            <p>
+                <label for="time8">Time</label>
+                <input type="time" id="time8" name="time8">
+            </p>
+            <!--STEPHEN BELIKOFF PARTA ENDS HERE-->
 			<!--Submit & Reset Button -->
 			<button type="submit" value="Submit">Submit</button>
 			<button type="reset" value="Reset">Reset</button>
