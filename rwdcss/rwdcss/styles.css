@@ -1,4 +1,16 @@
+/* Stephen Belikoff - Module 1 Activity 3 CSS */
+
+.container1 {
+    display: grid;
+}
+
+.asuLogo1 {
+    width: 25%;
+    float: left;
+}
+
 .title {
+    width: 50%;
     text-align: center;
     font-weight:100;
     font-size: x-large; 

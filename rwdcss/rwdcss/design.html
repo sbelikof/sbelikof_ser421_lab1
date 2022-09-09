@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module1Activity3B</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                max-width: 100rem;
+                margin-inline: auto;
+                padding-inline: 2rem;
+                padding: .5rem;
+            }
+            .gridLayoutA{
+                display: grid;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+            .gridLayoutB{
+                display: grid;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+            .gridLayoutC{
+                display: grid;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+            .gridLayoutD{
+                display: grid;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+            #asuLogo1{
+                column-width:40%;
+            }
+            #backgroundInfo{
+                text-align: left;
+                margin:auto;
+                font-size: auto;
+            }
+            #copyright{
+                margin:auto;
+            }
+            /* .twitter-timeline{
+                max-height: fit-content;
+                max-width: fit-content;
+            } */
+            .cell{
+                color: black;
+                padding: 1rem;
+            }
+            h1{
+                text-align: center;
+            }
+            footer{
+                text-align: center;
+                margin: auto;
+            }
+
+            @media (max-width: 550px){
+                .gridLayoutA{
+                    grid-template-columns: 1fr;
+                }
+                .gridLayoutB{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .gridLayoutC{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .gridLayoutD{
+                    grid-template-columns: 1fr;
+                }
+                #asuLogo1{
+                    display: none;
+                }
+                #asuLogo2{
+                    display: none;
+                }
+                #asuLogo3{
+                    display:none;
+                }
+                #asuLogo4{
+                    display:none;
+                }
+                #portrait{
+                    display:none;
+                }
+            }
+            @media (min-width: 550px){
+                .gridLayoutA{
+                    grid-template-columns: 1fr;
+                }
+                .gridLayoutB{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .gridLayoutC{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .gridLayoutD{
+                    grid-template-columns: 1fr;
+                }
+                #asuLogo1{
+                    display: none;
+                }
+                #asuLogo2{
+                    display: none;
+                }
+                #asuLogo3{
+                    display:none;
+                }
+                #asuLogo4{
+                    display:none;
+                }
+                #portrait{
+                    display:none;
+                }
+            }
+            @media (min-width: 800px){
+                .gridLayoutA{
+                    grid-template-columns: .1fr 1fr;
+                }
+                .gridLayoutB{
+                    grid-template-columns: .1fr 1fr;
+                }
+                .gridLayoutC{
+                    grid-template-columns: 49% 49%;
+                }
+                .gridLayoutD{
+                    grid-template-columns: 1fr;
+                }
+                #asuLogo1{
+                    display: block;
+                    margin:auto;
+                }
+                #asuLogo2{
+                    display: none;
+                }
+                #asuLogo3{
+                    display:none;
+                }
+                #asuLogo4{
+                    display:none;
+                }
+                #portrait{
+                    display:block;
+                }
+            }
+            @media (min-width: 1200px){
+                .gridLayoutA{
+                    grid-template-columns: .15fr .7fr .15fr;
+                }
+                .gridLayoutB{
+                    grid-template-columns: .1fr 1fr;
+                }
+                .gridLayoutC{
+                    grid-template-columns: 33% 33% 33%;
+                }
+                .gridLayoutD{
+                    grid-template-columns: .15fr .7fr .15fr;
+                }
+                #asuLogo1{
+                    display:block;
+                    margin:auto;
+                }
+                #asuLogo2{
+                    display:block;
+                    margin:auto;
+                }
+                #asuLogo3{
+                    display:block;
+                    margin:auto;
+                }
+                #asuLogo4{
+                    display:block;
+                    margin:auto;
+                }
+                #portrait{
+                    display:block;
+                    margin:auto;
+                }
+                #twitterCell{
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                float: center;
+                }
+                #publicationsCell{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="gridLayoutA">
+                    <div class="cell" id="asuLogo1"><img src="./images/asulogo.jpg"/></div>
+                    <div class="cell"><h1 class="title">Kevin A. Gary, Ph.D.</h1></div>
+                    <div class="cell" id="asuLogo2"><img id="asuLogo2Img" src="./images/asulogo.jpg" Align="right"/></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="gridLayoutB">
+                    <div class="cell" id="portrait"><img id="asuLogo2Img" src="./images/KevinAGarySmall.jpg"/></div>
+                    <div class="cell" id="backgroundInfo">
+                        Welcome to my homepage! I have been on the faculty at ASU since 2004, tenured in 2010. 
+                        I believe in creating challenging learning experiences for my students that prepares 
+                        them for industry, the profession, and life! I do this through 
+                        hands-on, project-based teaching in the 
+                        <a href="https://softwareenterprise.asu.edu">Software Enterprise</a>, use-inspired 
+                        applied research (particularly in e-Learning and healthcare), and applying 
+                        industry best practices in the classroom. My primary area is 
+                        "Software Engineering", but my interests vary from enterprise computing to mHealth to
+                        agile and open source software engineering.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="gridLayoutC">
+                    <div class="cell">
+                        <h2 class="sectionHeader">Contact Info:</h2>
+                        <p class="sectionContent">
+                            Associate Professor
+                            <br/> 
+                                <a href="http://cidse.engineering.asu.edu">
+                                    The School of Computing, Informatics, and Decision Systems Engineering
+                                </a>
+                            <br/>
+                                <a href="http://engineering.asu.edu/">
+                                    The Ira A. Fulton Schools of Engineering
+                                </a>
+                            <br/>
+                                <a href="http://poly.asu.edu">
+                                    Software Engineering Program Faculty, Polytechnic Campus
+                                </a>
+                            <br/>
+                                7171 Sonoran Arroyo Mall
+                            <br/>
+                                Peralta 230C 
+                            <br/>
+                                Mesa Arizona 85212
+                            <br/>
+                                Phone: <a href="tel:1-480-727-1373">(480)727-1373</a><br/>
+                                Email:<a href="mailto:kgary@asu.edu">kgary@asu.edu</a><br/>
+                                Web: <a href="http://www.public.asu.edu/~kgary">homepage</a>, <a href="http://drgarysblog.blogspot.com">blog</a> <br/>
+                            <br/>
+                                Twitter: <a href="https://twitter.com/drkevingary" class="twitter-follow-button" data-show-count="false">Follow @drkevingary</a>
+                            <br/> 
+                            <br/>
+                        </p>
+                    </div>
+                    <div class="cell">
+                        <h2 class="sectionHeader">Blog entries:</h2>
+                        <div class="sectionContent">
+                            <script language="JavaScript" src="http://www.feed2js.org//feed2js.php?src=http%3A%2F%2Fdrgarysblog.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;chan=title&amp;num=3&amp;desc=150&amp;date=y&amp;targ=y&amp;pc=y&amp;html=p"  type="text/javascript"></script>
+                            <noscript>
+                                <a href="http://www.feed2js.org//feed2js.php?src=http%3A%2F%2Fdrgarysblog.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;chan=title&amp;num=3&amp;desc=200&amp;date=y&amp;targ=y&amp;pc=y&amp;html=y">View RSS feed</a>
+                            </noscript>
+                        </div>
+                    </div>
+                    <div class="cell" id="twitterCell">
+                        <a class="twitter-timeline"  href="https://twitter.com/drkevingary"  data-widget-id="390204299604541440">
+                            Tweets by @drkevingary
+                        </a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <h2 class="sectionHeader">Links:</h2>
+                        <ul>
+                            <li><a href="./docs/CVfull.pdf">Current Vitae (including pubs)</a></li>
+                                <li><a href="./docs/ASUGradResearch100212.pdf">Graduate seminar presentation of research projects (2012)</a></li>
+                            <li><a href="http://www.igstk.org">IGSTK</a></li>
+                            <li><a href="http://softwareenterprise.asu.edu">The Software Enterprise</a></li>
+                            <li><a href="http://atic.asu.edu">The Advanced Technology Innovation Center (ATIC)</a>
+                        </ul>
+                    </div>
+                    <div class="cell" id="publicationsCell">
+                        <h2 class="sectionHeader">Selected Publications (see <a href="./docs/CVfull.pdf">CV</a> for full list):</h2> 
+                        <ol>
+                            <li>
+                                Gary, K., Kojcev, R., and Cleary, K. “A Systems Integration Architecture for NOTE Surgery”, Proceedings of the 16th Conference on Software Engineering and Applications (SEA 2012). Las Vegas, TX, November 2012.
+                            </li>
+                            <li>
+                                Gary, K., Kocjev, R., and Cleary, K. “Observations on the Evolving Maturity of Software and Systems Architecture Supporting Surgical Procedures”, Workshop on Infrastructure, Tools, and Technologies for System of Systems of Medical Devices (SoSMD 2011). Kansas, November 2011.
+                            </li>
+                            <li>
+                                Gary, K., Kokoori, S., Muffih, B., Enquobahrie, A., Cheng, P., Yaniv, Z., and Cleary, K. “Agile Methods for Safety-Critical Open Source Software”, Software: Practice and Experience, April 2011.
+                            </li>
+                              <li>
+                                Gary, K. The Software Enterprise: Practicing Best Practices in Software Engineering Education, 
+                                <i>
+                                    The International Journal of Engineering Education
+                                </i> 
+                                Special Issue on Trends in Software Engineering Education, Volume 24, Number 4, July 2008, pp. 705-716.
+                            </li>
+                            <li>Gary, K., The Software Enterprise: Preparing Industry-ready Software Engineers, in 
+                                <i>
+                                    Software Engineering: Effective Teaching and Learning Approaches
+                                </i>
+                                , Ellis, H., Demurjian, S., and Naveda, J.F., (eds.), Idea Group Publishing. October 2008.
+                            </li>
+                            <li>
+                                Gary, K. and Koehnemann, H. Component-based Deployment for Web Applications: Methods and Issues, in 
+                                <i>
+                                    Software Engineering for Modern Web Applications
+                                </i>
+                                , Brandon, D. (ed.), Idea Group Publishing. 2008.
+                            </li>
+                            <li>
+                                Gary, K., Blake, B., Ibanez, L., Gobbi, D., Aylward, S., and Cleary, K. IGSTK: An Open Source
+                                Software Platform for Image-Guided Surgery,  
+                                <i>
+                                    IEEE Computer Special Issue on software engineering and application of software-based medical devices and device systems
+                                </i>
+                                , April 2006.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="gridLayoutD">
+                <div class="cell" id="asuLogo3"><img src="./images/asulogo.jpg"/></div>
+                <div class="cell" id="copyright"><footer class="footer">Copyright &copy; 2013 Kevin A. Gary</footer></div>
+                <div class="cell" id="asuLogo4"><img id="asuLogo2Img" src="./images/asulogo.jpg" Align="right"/></div>
+            </div>
+        </div>
+        </main>
+    </body>
+
+</html>
